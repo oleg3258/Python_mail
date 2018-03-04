@@ -25,7 +25,7 @@ class Client:
         print('Send: %r' % message)
         writer.write(message.encode())
 
-        data = await reader.read(100)
+        data = await reader.read(100)#mike check
         print('Received: %r' % data.decode())
         if not data:
             raise ClientError
