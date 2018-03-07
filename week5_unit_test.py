@@ -7,7 +7,7 @@
 
         python -m unittest test_week5.py
 
-    Обратите внимание на то, что ваш модуль должен называться client.py.
+    Обратите внимание на то, что ваш модуль должен называться my_client.py.
     Это не обязательное требование, если вы назвали мобуль по-другому, то
     просто измените его импорт в строке 26 на:
         from you_module_name import Client, ClientError
@@ -23,7 +23,7 @@ from unittest.mock import patch
 from collections import deque
 
 # импорт модуля с решением
-from client import Client, ClientError
+from my_client import Client, ClientError
 
 
 class ServerSocketException(Exception):

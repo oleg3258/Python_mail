@@ -9,7 +9,7 @@
 запускаете этот скрипт.
 """
 import sys
-from client_standart import Client, ClientSocketError, ClientProtocolError
+from client_standart_Coursera import Client, ClientSocketError, ClientProtocolError
 
 
 def run(host, port):
