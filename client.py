@@ -52,7 +52,7 @@ class Client:
 class ClientError(Exception):
     pass
 
-
+#
 # client = Client('127.0.0.1', 10000, timeout=15)
 # client.put("palm.cpu", 0.5, timestamp=1150864247)
 # # client.get("palm.cpu")
