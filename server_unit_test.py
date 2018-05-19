@@ -18,7 +18,7 @@ def run(host, port):
     except ClientProtocolError:
         pass
     else:
-        print("Неверная команда, отправленная серверу, должна возвращать ошибку протокола")
+        print("Неверная команда(ожидается ошибка протокола)")
         sys.exit(1)
 
     try:
@@ -60,7 +60,7 @@ def run(host, port):
     try:
         result = client1.get("k3")
         if result != {}:
-            print(f"Ошибка вызова метода get с ключом, который еще не был добавлен. Ожидается: пустой словарь. Получено: {result}")
+            print(f"Ошибка вызова метода get с ключом, который еще не был добавлен. Ожидается: пустой словарь. ")
             # sys.exit(1)
     except Exception as err:
         print(f"Ошибка вызова метода get с ключом, который еще не был добавлен: {err.__class__} {err}")
